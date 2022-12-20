@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+:root {
+    --main-bg-color: rgb(255, 248, 235);
+    --primary-color: orange;
+    --button-bg: rgb(255, 234, 0);
+    --button-bg-hover: rgb(211, 194, 1);
+    --button-outline: rgb(64, 64, 64);
+    --outline-hover: rgb(80, 36, 0);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-bg-color);
+}
+
+.btn {
+    border: none;
+    outline: 2px solid rgb(64, 64, 64);
+    padding: .5rem 1.5rem;
+    border-radius: 10px;
+    background-color: var(--button-bg);
+    font-weight: bold;
+    transition: all .2s;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--button-bg-hover);
+    outline: 2px solid black;
+}
+.btn:active {
+    outline: 2px solid var(--outline-hover);
+}
+.btn:focus {
+    outline: 2px solid var(--outline-hover);
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    margin-top: 1rem;
+}
+    .logo {
+        width: 3rem;
+        height: 3rem;
+    }
+
+.sign-out {
+    align-self: flex-end;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    text-decoration: underline;
+    color: rgb(0, 141, 235);
+}
+.sign-out:hover {
+    color: rgb(41, 169, 255);
+    cursor: pointer;
+}
+.sign-out:active {
+    color: rgb(0, 123, 205);
+}

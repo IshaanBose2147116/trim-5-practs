@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS - Library</title>
+    <link href='https://fonts.googleapis.com/css?family=Chakra Petch' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="icon/book.ico" />
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+</head>
+<body>
+    <span id="sign-out" class="sign-out">Sign Out</span>
+    <div class="banner">
+        <img src="images/book.png" class="logo" />
+        <h1><u>Library</u></h1>
+        <img src="images/book.png" class="logo" />
+    </div>
+    <div class="button-container">
+        <button class="btn" id="view-switch">View Checkouts</button>
+        <div>
+            <select id="filter">
+                <option value="title">Title</option>
+                <option value="author">Author</option>
+            </select>
+            <input type="text" id="search" placeholder="Search" class="search-field"/>
+        </div>
+    </div>
+    <table>
+        <thead id="table-head"></thead>
+        <tbody id="table-body"></tbody>
+    </table>
+    <script src="scripts/index.js"></script>
+</body>
+</html>

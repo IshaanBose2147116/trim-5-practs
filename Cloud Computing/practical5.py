@@ -1,6 +1,6 @@
 import boto3
 from tkinter import Tk
-from tkinter.filedialog import askopenfilenamepath
+from tkinter.filedialog import askopenfilename
 import cv2
 import os
 
@@ -10,7 +10,7 @@ s3_client = boto3.client('s3')
 s3_resource = boto3.resource('s3')
 
 Tk().withdraw() # we don't want a full GUI, so keep the root window from appearing
-filenamepath = askopenfilenamepath() # show an "Open" dialog box and return the path to the selected filename
+filenamepath = askopenfilename() # show an "Open" dialog box and return the path to the selected filename
 print(filenamepath)
 
 filename = filenamepath.split("/")[-1] # file name
